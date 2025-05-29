@@ -7,7 +7,7 @@ https://eksctl.io/installation/
 
 # eksctl sh
 make executable:
-'''chmod +x install-eksctl.sh'''
+```chmod +x install-eksctl.sh```
 
 run:
-'''./install-eksctl.sh'''
+```./install-eksctl.sh```
