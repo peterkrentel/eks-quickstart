@@ -7,12 +7,6 @@ set -o pipefail
 # echo "Creating EKS cluster..."
 # eksctl create cluster -f cluster-config.yaml
 
-echo "Waiting for Kubernetes API to be ready..."
-until kubectl version --short &> /dev/null; do
-  echo "Waiting for cluster..."
-  sleep 5
-done
-
 echo "Applying IngressClass..."
 kubectl apply -f ingressclass.yaml
 
